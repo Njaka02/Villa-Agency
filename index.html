@@ -4,9 +4,131 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css">
-    <title>Document</title>
-</head>
-<body>
+    <!-- Linking Swiper CSS -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+      <!-- Linking Google Fonts for Icons -->
+      <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,700,0,0" />
+      <!-- Linking Customs Script -->
+
+    <title>Villa Agency</title>
+    <link rel="icon" type="image" href="images/modern-villa.jpg">
+    <script src="script.js" defer></script>
+    </head>
+
+    <body>
+        <header>
+            <div class="top-nav">
+                <div class="info">
+                    <ul>
+                        <li class="logo-info-1">
+                            <img src="images/mail_logo.png" alt="Email Logo">
+                            <a href="#">info@company.com</a>
+                        </li>
+                        <li class="logo-info-2">
+                            <img src="images/map_logo.png" alt="Map Logo">
+                            <a href="#">Sunny Isles Beach, FL 33160</a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="social-network">
+                    <ul>
+                        <li class="social-network-logo"><a href="#"><img src="images/linkedin.jpeg" alt="LinkedIn"></a></li>
+                        <li class="social-network-logo"><a href="#"><img src="images/x.jpg" alt="X (Twitter)"></a></li>
+                        <li class="social-network-logo"><a href="#"><img src="images/instagram.jpg" alt="Instagram"></a></li>
+                        <li class="social-network-logo"><a href="#"><img src="images/facebook.png" alt="Facebook"></a></li>
+                    </ul>
+                </div>
+            </div>
+
+            <hr>
+        
+            <div class="navbar">
+                <div class="villa">
+                    <a href="#">VILLA</a>
+                </div>
+                <div class="nav-links">
+                    <ul>
+                        <li><a href="#">Home</a></li>
+                        <li><a href="#">Properties</a></li>
+                        <li><a href="#">Property Details</a></li>
+                        <li><a href="#">Contact Us</a></li>
+                    </ul>
+                </div>
+                <div class="Schedule">
+                    <img src="images/calendar_month.png" alt="Calendar Logo">
+                    <a href="#">Schedule a visit</a>
+                </div>
+            </div>
+        </header>
+
+        <main>
+            <div class="slider-container">
+                <!-- Slider List Items -->
+                <div class="slider-wrapper swiper-wrapper">
+                    <div class="slider-item swiper-slide">
+                        <div class="slide-content">
+                            <h3 class="slide-subtitle">Toronto, <span class="Orange">Canada</span></h3>
+                            <h2 class="slide-title">Hurry!<br>Get the Best Villa for you</h2>
+                        </div>
+                    </div>
+                    <div class="slider-item swiper-slide">
+                        <div class="slide-content">
+                            <h3 class="slide-subtitle">Melbourne, <span class="Orange">Australia</span></h3>
+                            <h2 class="slide-title">Hurry!<br>Get the Best Villa in town</h2>
+                        </div>
+                    </div>
+                    <div class="slider-item swiper-slide">
+                        <div class="slide-content">
+                            <h3 class="slide-subtitle">Miami, <span class="Orange">South Florida</span></h3>
+                            <h2 class="slide-title">Act Now!<br>Get the highest level penthouse</h2>
+                        </div>
+                    </div>
+                </div>
     
-</body>
+                <!-- Slider List Pagination -->
+                <div class="slider-controls">
+                    <div class="slider-pagination">
+                        <div class="slider-indicator">
+                            <input class="slider-tab" type="radio" name="slide" id="img1">
+                            <input class="slider-tab" type="radio" name="slide" id="img2">
+                            <input class="slider-tab" type="radio" name="slide" id="img3">
+                        </div>
+                    </div>
+                </div>
+    
+                <!-- Slider Navigations (Prev/Next) -->
+                <div class="slider-navigations">
+                    <button id="slide-prev" class="material-symbols-outlined">arrow_back_ios</button>
+                    <button id="slide-next" class="material-symbols-outlined">arrow_forward_ios</button>
+                </div>
+            </div>
+
+
+
+            <!-- <div class="gallery">
+                <div class="Toronto">
+                    <p>Toronto, <span class="Orange">Canada</span></p>
+                    <h2>Hurry!<br>Get the Best Villa for you</h2>
+                </div>
+                <div class="Melbourne">
+                    <p>Melbourne, <span class="Orange">Australia</span></p>
+                    <h2>Be Quick!<br>Get the best villa in town</h2>
+                </div>
+                <div class="Miami">
+                    <p>Miami, <span class="Orange">South Florida</span></p>
+                    <h2>Act Now!<br>Get the highest level penthouse</h2>
+                </div>
+            </div> -->
+        </main>
+
+
+
+
+
+    <!-- Linking Swiper Scipt -->
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    </body>
 </html>
