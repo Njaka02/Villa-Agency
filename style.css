@@ -84,18 +84,31 @@ hr {
 }
 
 .navbar {
-    display: flex;
+        display: flex;
+        margin: 0;
+        padding: 1rem 6rem;
+        align-items: center;
+        justify-content: space-between;
+        position: sticky;
+        top: 0;
+        background-color: #fff;
+        z-index: 1000;
+        box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+
+    /* display: flex;
     margin: 2rem 6rem;
     align-items: center;
     justify-content: space-between;
-    /* 
+    position: sticky;
+    top: 0;
+    
     position: fixed;
     background-color: rgb(255, 255, 255);
     height: 12%;
     width: 100%;
     padding: 0 6rem;
-    z-index : ;
-     */
+    z-index : 20; */
+    
 }
 
 .villa a {
@@ -309,25 +322,25 @@ input[type="radio"] {
 }
 
 .image-left {
-    background-image: url("images/featured.jpg");
     width: 75%;
     height: 63vh;
     background-repeat: no-repeat;
+    background-image: url("images/featured.jpg");
 
 }
 
 .image-left a img{
-    background-color: orangered;
-    border-radius: 50%;
     padding: 1.5rem;
     margin-top: 27rem;
+    border-radius: 50%;
     margin-left: -3rem;
+    background-color: orangered;
 }
 
 .featured-section {
-    margin: 0 3rem 0 3rem;
-    height: auto;
     width: 100%;
+    height: auto;
+    margin: 0 3rem 0 3rem;
 }
 
 .featured h6 {
@@ -338,9 +351,9 @@ input[type="radio"] {
 }
 
 .featured h2 {
-    margin: 1.5rem 0;
     font-size: 3rem;
     font-weight: 700;
+    margin: 1.5rem 0;
     line-height: 4rem;
     text-transform: capitalize;
 }
@@ -361,8 +374,8 @@ input[type="radio"] {
 }
 
 .button-info {
-    padding: 1rem;
     border: none;
+    padding: 1rem;
     cursor: pointer;
     font-weight: 600;
     font-size: 1.1rem;
@@ -393,10 +406,10 @@ input[type="radio"] {
 }
 
 .dif-info {
-    height: 63vh;
     width: 70%;
-    background-color: rgb(255, 255, 255);
+    height: 63vh;
     border-radius: 10px;
+    background-color: rgb(255, 255, 255);
     filter: drop-shadow(1px 1px 10px rgba(0, 0, 0, 0.2));
 }
 
@@ -410,8 +423,8 @@ input[type="radio"] {
 }
 
 .info-1 {
-    font-size: 1.5rem;
     font-weight: 500;
+    font-size: 1.5rem;
 }
 
 .info-2 {
@@ -419,11 +432,11 @@ input[type="radio"] {
 }
 
 .background-video {
-    background-image: url("images/video-bg.jpg");
-    height: 100vh;
     width: 100%;
-    background-repeat: no-repeat;
+    height: 100vh;
     text-align: center;
+    background-repeat: no-repeat;
+    background-image: url("images/video-bg.jpg");
 }
 
 .background-video h2 {
@@ -431,8 +444,8 @@ input[type="radio"] {
 }
 
 .background-video .featured-content{
-    padding: 4rem 0 2rem 0;
     height: auto;
+    padding: 4rem 0 2rem 0;
 }
 
 .video-frame {
@@ -440,12 +453,12 @@ input[type="radio"] {
 }
 
 .video {
-    position: absolute;
-    border-radius: 1rem;
-    height: 60vh;
-    width: 70%;
     top: 0;
     left: 15%;
+    width: 70%;
+    height: 60vh;
+    position: absolute;
+    border-radius: 1rem;
 }
 
 .play-icon {
@@ -453,9 +466,9 @@ input[type="radio"] {
     height: 2rem;
     padding: 1rem;
     position: relative;
+    border-radius: 50%;
     transform: translate(10%, 320%);
     background-color: rgba(255, 255, 255, 0.5);
-    border-radius: 50%;
 }
 
 .play-icon:hover {
@@ -469,19 +482,19 @@ input[type="radio"] {
 }
 
 .buildings {
-    background-color: rgba(243, 85, 37, 0.15);
-    height: 5rem;
     width: auto;
-    padding: 1.5rem 2rem 0.5rem 2rem;
+    height: 5rem;
     display: flex;
     border-radius: 1rem;
+    padding: 1.5rem 2rem 0.5rem 2rem;
+    background-color: rgba(243, 85, 37, 0.15);
 }
 
 .buildings h2 {
-    padding-right: 1rem;
-    font-size: 2.5rem;
-    color: rgb(243, 85, 37);
     padding: 0 2rem;
+    font-size: 2.5rem;
+    padding-right: 1rem;
+    color: rgb(243, 85, 37);
 }
 
 .buildings p {
@@ -492,30 +505,30 @@ input[type="radio"] {
 
 .boul-1 {
     position: absolute;
-    background-color: rgb(243, 85, 37);
-    height: 3rem;
     width: 3rem;
-    border-radius: 50%;
+    height: 3rem;
     margin-top: -3%;
+    border-radius: 50%;
     margin-left: 15.5%;
+    background-color: rgb(243, 85, 37);
 }
 .boul-2 {
     position: absolute;
-    background-color: rgb(243, 85, 37);
-    height: 3rem;
     width: 3rem;
-    border-radius: 50%;
+    height: 3rem;
     margin-top: -3%;
+    border-radius: 50%;
     margin-left: 13.5%;
+    background-color: rgb(243, 85, 37);
 }
 .boul-3 {
     position: absolute;
-    background-color: rgb(243, 85, 37);
-    height: 3rem;
     width: 3rem;
-    border-radius: 50%;
+    height: 3rem;
     margin-top: -3%;
+    border-radius: 50%;
     margin-left: 13.5%;
+    background-color: rgb(243, 85, 37);
 }
 
 .bg-content {
@@ -537,23 +550,23 @@ input[type="radio"] {
 }
 
 .diff-btn button {
-    background-color: rgb(0, 0, 0);
+    width: auto;
+    height: auto;
     color: #fff;
     cursor: pointer;
     font-size: 1.1rem;
     padding: 1rem 2rem;
-    height: auto;
-    width: auto;
     border-radius: 0.5rem;
+    background-color: rgb(0, 0, 0);
 }
 
-.diff-btn button:hover {
+/* .diff-btn button:hover {
     
-}
+} */
 
 .Appartment.clicked {
-    background-color: rgb(243, 85, 37);
     border: none;
+    background-color: rgb(243, 85, 37);
  }
 
 .margin-btn {
@@ -565,11 +578,11 @@ input[type="radio"] {
 }
 
 .diff-info {
-    background-color: rgb(244, 244, 244);
-    height: 20%;
     width: 25%;
-    filter: drop-shadow(1px 1px 10px rgba(0, 0, 0, 0.2));
+    height: 20%;
     border-radius: 1rem;
+    background-color: rgb(244, 244, 244);
+    filter: drop-shadow(1px 1px 10px rgba(0, 0, 0, 0.2));
 }
 
 .diff-info ul li {
@@ -591,14 +604,14 @@ hr {
 }
 
 .property-5 img {
-    margin: 0 5rem;
-    height: 50vh;
     width: 75%;
+    height: 50vh;
+    margin: 0 5rem;
 }
 
 .details-property p {
-    font-size: 0.9rem;
     margin-top: 2rem;
+    font-size: 0.9rem;
     line-height: 1.7rem;
 }
 
@@ -621,6 +634,262 @@ hr {
 .deal-01.active {
     display: block;
 }
+
+/* .content-propertie {
+    padding: 7rem;
+} */
+
+.properties {
+    margin-top: 7rem;
+    text-align: center;
+}
+
+.diff-villa {
+    margin: 7rem;
+    display: flex;
+    flex-wrap: wrap;
+    grid-row-gap: 20px;
+    grid-column-gap: 20px;
+    justify-content: space-around;
+}
+
+.villa-miami {
+    width: 27%;
+    height: 100%;
+    padding: 2rem;
+    border-radius: 0.6rem;
+    background-color: rgba(177, 177, 177, 0.1);
+}
+
+.margin-villa-miami a img {
+    width: 100%;
+    height: 35vh;
+    border-radius: 0.6rem;
+}
+
+.margin-villa-miami p {
+    margin: 1rem 0;
+}
+
+.margin-villa-miami p .price {
+    float: right;
+    font-weight: 700;
+    font-size: 1.4rem;
+    color: rgb(243, 85, 37);
+}
+
+.margin-villa-miami p .luxury {
+    width: auto;
+    height: auto;
+    padding: 0.5rem 1rem;
+    border-radius: 0.5rem;
+    background-color: rgba(243, 85, 37, 0.15);
+}
+
+.margin-villa-miami h3 a {
+    color: rgb(0, 0, 0);
+}
+.margin-villa-miami h3 {
+    padding: 1rem 0;
+}
+
+.characters-list ul {
+    display: flex;
+    flex-wrap: wrap;
+    padding: 0.5rem 0 1.5rem 0;
+}
+
+.characters-list ul li {
+    font-size: 0.9rem;
+    padding-right: 1.2rem;
+}
+
+.bedrooms-bold {
+    font-weight: 600;
+}
+
+.visit{
+    padding-top: 2rem;
+    
+}
+
+.visit a {
+    border-radius: 5rem;
+    padding: 0.5rem 2rem;
+}
+
+.schedule-visit {
+    width: 8rem;
+    height: auto;
+    margin: 0 20%;
+    color: rgb(255, 255, 255);
+    background-color: rgb(0, 0, 0);
+}
+
+.schedule-visit:hover {
+    transition: 1s ease;
+    background-color: rgb(243, 85, 37);
+}
+
+.contact-us {
+    width: 100%;
+    height: 46vh;
+    padding: 6rem 0;
+    text-align: center;
+    background-repeat: no-repeat;
+    background-image: url("images/contact-bg.jpg");
+}
+
+.contact-us h2 {
+    color: rgb(255, 255, 255);
+}
+
+.location-map {
+    display: flex;
+    flex-direction: row;
+    margin: -15rem 7rem 7rem 7rem;
+    justify-content: space-between;
+}
+
+.location iframe {
+    border-radius: 0.5rem;
+}
+
+.last-info ul {
+    display: flex;
+    margin-top: 4rem;
+    justify-content: space-between;
+}
+
+.last-info ul li {
+    width: 15rem;
+    height: auto;
+    display: flex;
+    border-radius: 1rem;
+    justify-content: center;
+    padding: 2rem 4rem 2rem 2rem;
+    background-color: rgb(255, 255, 255);
+    filter: drop-shadow(1px 1px 10px rgba(0, 0, 0, 0.2));
+}
+
+.margin-info1 {
+    margin-right: 2rem;
+}
+
+.margin-info2 {
+    margin-left: 2rem;
+}
+
+.info-bold {
+    font-weight: 600;
+    font-size: 1.3rem;
+}
+
+.info-opacity {
+    opacity: 50%;
+    font-size: medium;
+}
+
+.last-info ul li img {
+    width: 3rem;
+    height: 3rem;
+    padding-right: 1.5rem;
+}
+
+.contact-form form {
+    height: 90%;
+    width: 100%;
+    border-radius: 0.5rem;
+    padding: 2rem 0 2rem 2rem;
+    background-color: rgb(255, 255, 255);
+    filter: drop-shadow(1px 1px 10px rgba(0, 0, 0, 0.2));
+}
+
+.contact-form form fieldset input, textarea  {
+    border: none;
+    width: 25rem;
+    padding: 1rem;
+    border-color: none;
+    border-radius: 5rem;
+    margin: 1rem 0 2rem 0;
+    background-color: rgb(244, 244, 244);
+}
+
+/* textarea {
+    border-radius: 1rem;
+} */
+
+.contact-form form fieldset textarea {
+    width: 25rem;
+    height: 5rem;
+    border: none;
+    padding: 1rem;
+    resize: vertical;
+    max-width: 30rem;
+    max-height: 10rem;
+    border-radius: 1rem;
+    background-color: rgb(244, 244, 244);
+}
+
+
+fieldset {
+    border: none;
+}
+
+.contact-form form fieldset label {
+    padding-bottom: 1rem;
+}
+
+.button-message {
+    width: auto;
+    height: auto;
+    border: none;
+    font-size: 1rem;
+    border-radius: 2rem;
+    padding: 1rem 1.5rem;
+    color: rgb(255, 255, 255);
+    background-color: rgb(0, 0, 0);
+}
+
+.button-message:hover {
+    transition: 0.5s ease-in-out;
+    background-color: rgb(243, 85, 37);
+}
+
+footer {
+    color: #fff;
+    padding: 2rem 0;
+    text-align: center;
+    justify-content: center;
+    background-color: black;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
