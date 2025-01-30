@@ -48,7 +48,7 @@ function changeColor(button) {
       const buttons = document.querySelectorAll('.button-info');
       buttons.forEach((btn) => {
         btn.classList.remove('clicked');
-      });  
+      });
       button.classList.add('clicked');
     }
   }
@@ -91,4 +91,16 @@ const Deal = document.querySelectorAll(".deal-01");
     button.addEventListener('click', () => {
       changeColor(button);
     });
+  });
+
+
+ let menuHome = document.querySelector('.menu-home');
+  // menuHome.onclick = () => {
+  //   const navLinks = document.querySelector('.nav-links');
+  //   navLinks.classList.toggle('.active');
+  // }
+
+  menuHome.addEventListener('click', () => {
+    let navLinks = document.querySelector('.nav-links');
+    navLinks.classList.toggle('active');
   });
