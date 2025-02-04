@@ -913,7 +913,7 @@ footer {
 }
 
 
-/* ** PROPERTY DETAILS ** */
+/* ** PROPERTY DETAILS CSS ** */
 
 .info-property {
     display: flex;
@@ -965,6 +965,35 @@ footer {
     margin: 0;
 }
 
+
+/* ** CONTACT US CS ** */
+
+.all-info-map .map .location-map {
+    margin: 7em ;
+}
+
+.all-info-map .map .location-map .location {
+    width: 45vw;
+}
+
+.all-info-map .map .location-map .location .last-info ul {
+    display: flex;
+    flex-direction: column;
+}
+
+.all-info-map .map .location-map .location .last-info ul .margin-info1 {
+    margin: 1em 0;
+}
+
+.all-info-map .map .location-map .location .last-info ul .margin-info2 {
+    margin: 1em 0;
+}
+
+.all-info-map .map iframe {
+    width: 90vw;
+    margin: 0 5% 10%;
+    border-radius: 1em;
+}
 
 
 
@@ -1311,6 +1340,20 @@ footer {
         margin: 0.5em;
     }
 
+    /* ** CONTACT US RESPONSIVE ** */
+
+    .all-info-map .map .location-map {
+        margin: 1em ;
+    }
+
+    .all-info-map .map .location-map .location {
+        width: 90vw;
+    }
+
+    .all-info-map .map .location-map .location .last-info ul {
+        margin: 1em 0;
+    }
+
 
 }
 
@@ -1430,6 +1473,20 @@ footer {
         .content-villa .villa-miami hr {
             margin: 0.5em;
         }
+
+        /* ** CONTACT US RESPONSIVE ** */
+
+    .all-info-map .map .location-map {
+        margin: 1em ;
+    }
+
+    .all-info-map .map .location-map .location {
+        width: 90vw;
+    }
+
+    .all-info-map .map .location-map .location .last-info ul {
+        margin: 1em 0;
+    }
 
 
 }
@@ -1746,6 +1803,20 @@ footer {
         margin: 0.5em;
     }
 
+    /* ** CONTACT US RESPONSIVE ** */
+
+    .all-info-map .map .location-map {
+        margin: 1em ;
+    }
+
+    .all-info-map .map .location-map .location {
+        width: 90vw;
+    }
+
+    .all-info-map .map .location-map .location .last-info ul {
+        margin: 1em 0;
+    }
+
 
 
 }
@@ -2016,6 +2087,20 @@ footer {
         margin: 0.5em;
     }
 
+    /* ** CONTACT US RESPONSIVE ** */
+
+    .all-info-map .map .location-map {
+        margin: 1em ;
+    }
+
+    .all-info-map .map .location-map .location {
+        width: 90vw;
+    }
+
+    .all-info-map .map .location-map .location .last-info ul {
+        margin: 1em 0;
+    }
+
 
 
 }
@@ -2282,6 +2367,10 @@ footer {
         width: 93vw;
     }
 
+     .info-property .dif-info ul img {
+        width: 15vw;
+    }
+
     .content-villa {
         margin-left: 1em;
     }
@@ -2296,6 +2385,24 @@ footer {
 
     .content-villa .villa-miami hr {
         margin: 0.5em;
+    }
+
+    /* ** CONTACT US RESPONSIVE ** */
+
+    .all-info-map .map .location-map {
+        margin: 1em ;
+    }
+
+    .all-info-map .map .location-map .location {
+        width: 93vw;
+    }
+
+    .all-info-map .map .location-map .location .last-info ul {
+        margin: 1em 0;
+    }
+
+      .all-info-map .map iframe {
+        height: 50vh;
     }
 
 
@@ -2573,6 +2680,24 @@ footer {
 
     .content-villa .villa-miami hr {
         margin: 0.5em;
+    }
+
+    /* ** CONTACT US RESPONSIVE ** */
+
+    .all-info-map .map .location-map {
+        margin: 1em ;
+    }
+
+    .all-info-map .map .location-map .location {
+        width: 90vw;
+    }
+
+    .all-info-map .map .location-map .location .last-info ul {
+        margin: 1em 0;
+    }
+
+      .all-info-map .map iframe {
+        height: 50vh;
     }
 
 
@@ -2861,6 +2986,26 @@ footer {
     .content-villa .villa-miami hr {
         margin: 0.5em;
     }
+
+/* ** CONTACT US RESPONSIVE ** */
+
+    .all-info-map .map .location-map {
+        margin: 1em ;
+    }
+
+    .all-info-map .map .location-map .location {
+        width: 90vw;
+    }
+
+    .all-info-map .map .location-map .location .last-info ul {
+        margin: 1em 0;
+    }
+
+    .all-info-map .map iframe {
+        height: 50vh;
+    }
+
+
 
 }
 
