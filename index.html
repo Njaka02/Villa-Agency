@@ -19,6 +19,36 @@
     </head>
 
     <body>
+
+          <!-- Loader -->
+  <div id="loader" class="loader">
+    <div class="load">
+      <span style="--i:1;"></span>
+      <span style="--i:2;"></span>
+      <span style="--i:3;"></span>
+      <span style="--i:4;"></span>
+      <span style="--i:5;"></span>
+      <span style="--i:6;"></span>
+      <span style="--i:7;"></span>
+    </div>
+  </div>
+
+  <!-- Filtre SVG pour l'effet "liquid" -->
+  <svg>
+    <filter id="liquid">
+      <feGaussianBlur in="SourceGraphic" stdDeviation="2" result="blur" />
+      <feColorMatrix in="blur" mode="matrix" values="
+          1 0 0 0 0
+          0 1 0 0 0
+          0 0 1 0 0
+          0 0 0 18 -7" result="liquid" />
+      <feBlend in="SourceGraphic" in2="liquid" mode="normal" />
+    </filter>
+  </svg>
+
+ 
+
+
         <header>
             <nav>
                 <div class="top-nav">
@@ -113,7 +143,7 @@
 
             <div class="container-info">
                 <div class="image-left">
-                    <a href="#"><img src="images/featured-icon.png" alt="featured-icon"></a>
+                    <a href="propertyDetails.html"><img src="images/featured-icon.png" alt="featured-icon"></a>
                 </div>
                 <div class="featured-section">
                     <div class="featured">
@@ -229,7 +259,7 @@
                                 </div>
                                 <div class="Schedule">
                                     <img src="images/calendar_month.png" alt="Calendar Logo">
-                                    <a href="#">Schedule a visit</a>
+                                    <a href="propertyDetails.html">Schedule a visit</a>
                                 </div>
                             </div>
                         </div>
@@ -262,7 +292,7 @@
                                 </div>
                                 <div class="Schedule">
                                     <img src="images/calendar_month.png" alt="Calendar Logo">
-                                    <a href="#">Schedule a visit</a>
+                                    <a href="propertyDetails.html">Schedule a visit</a>
                                 </div>
                             </div>
                         </div>
@@ -295,7 +325,7 @@
                                 </div>
                                 <div class="Schedule">
                                     <img src="images/calendar_month.png" alt="Calendar Logo">
-                                    <a href="#">Schedule a visit</a>
+                                    <a href="propertyDetails.html">Schedule a visit</a>
                                 </div>
                             </div>
                         </div>
@@ -312,9 +342,9 @@
                 <div class="diff-villa">
                     <div class="villa-miami">
                         <div class="margin-villa-miami">
-                            <a href="#"><img src="images/property-01.jpg" alt="property-01"></a>
+                            <a href="propertyDetails.html"><img src="images/property-01.jpg" alt="property-01"></a>
                             <p><span class="luxury">Luxury Villa</span> <span class="price">$2.264.000</span></p>
-                            <h3><a href="#">18 New Street Miami, OR 97219</a></h3>
+                            <h3><a href="propertyDetails.html">18 New Street Miami, OR 97219</a></h3>
     
                             <div class="characters-list">
                                 <ul>
@@ -334,9 +364,9 @@
 
                     <div class="villa-miami">
                         <div class="margin-villa-miami">
-                            <a href="#"><img src="images/property-02.jpg" alt="property-01"></a>
+                            <a href="propertyDetails.html"><img src="images/property-02.jpg" alt="property-01"></a>
                             <p><span class="luxury">Luxury Villa</span> <span class="price">$1.180.000</span></p>
-                            <h3><a href="#">54 Mid Street Florida, OR 27001</a></h3>
+                            <h3><a href="propertyDetails.html">54 Mid Street Florida, OR 27001</a></h3>
     
                             <div class="characters-list">
                                 <ul>
@@ -356,9 +386,9 @@
 
                     <div class="villa-miami">
                         <div class="margin-villa-miami">
-                            <a href="#"><img src="images/property-03.jpg" alt="property-01"></a>
+                            <a href="propertyDetails.html"><img src="images/property-03.jpg" alt="property-01"></a>
                             <p><span class="luxury">Luxury Villa</span> <span class="price">$1.460.000</span></p>
-                            <h3><a href="#">26 Old Street Miami, OR 38540</a></h3>
+                            <h3><a href="propertyDetails.html">26 Old Street Miami, OR 38540</a></h3>
     
                             <div class="characters-list">
                                 <ul>
@@ -378,9 +408,9 @@
 
                     <div class="villa-miami">
                         <div class="margin-villa-miami">
-                            <a href="#"><img src="images/property-04.jpg" alt="property-01"></a>
+                            <a href="propertyDetails.html"><img src="images/property-04.jpg" alt="property-01"></a>
                             <p><span class="luxury">Apartment</span> <span class="price">$584.500</span></p>
-                            <h3><a href="#">12 New Street Miami, OR 12650</a></h3>
+                            <h3><a href="propertyDetails.html">12 New Street Miami, OR 12650</a></h3>
     
                             <div class="characters-list">
                                 <ul>
@@ -400,9 +430,9 @@
 
                     <div class="villa-miami">
                         <div class="margin-villa-miami">
-                            <a href="#"><img src="images/property-05.jpg" alt="property-01"></a>
+                            <a href="propertyDetails.html"><img src="images/property-05.jpg" alt="property-01"></a>
                             <p><span class="luxury">Penthouse</span> <span class="price">$925.600</span></p>
-                            <h3><a href="#">34 Beach Street Miami, OR 42680</a></h3>
+                            <h3><a href="#propertyDetails.html">34 Beach Street Miami, OR 42680</a></h3>
     
                             <div class="characters-list">
                                 <ul>
@@ -422,9 +452,9 @@
 
                     <div class="villa-miami">
                         <div class="margin-villa-miami">
-                            <a href="#"><img src="images/property-06.jpg" alt="property-01"></a>
+                            <a href="propertyDetails.html"><img src="images/property-06.jpg" alt="property-01"></a>
                             <p><span class="luxury">Modern Condo</span> <span class="price">$450.000</span></p>
-                            <h3><a href="#">22 New Street Portland, OR 16540</a></h3>
+                            <h3><a href="propertyDetails.html">22 New Street Portland, OR 16540</a></h3>
     
                             <div class="characters-list">
                                 <ul>

@@ -11,6 +11,78 @@ body {
 }
 
 
+/* ** CSS LOADER ** */
+
+.loader {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: #010b10;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 9999;
+  }
+
+  /* Conteneur du loader utilisant l'effet "liquid" */
+  .load {
+    position: relative;
+    width: 300px;
+    height: 40px;
+    /* Application de l'effet SVG (liquid) */
+    filter: url(#liquid);
+  }
+
+  /* Style de chaque élément animé */
+  .load span {
+    position: absolute;
+    width: 40px;
+    height: 40px;
+    background: linear-gradient(45deg, #ff5440, #ff2300);
+    border-radius: 50%;
+    box-shadow: 0 0 40px rgba(255, 68, 0, 0.8);
+    animation: animate 3s ease-in-out infinite;
+    animation-delay: calc(0.1s * var(--i));
+  }
+
+  /* Animation dynamique avec translation et effet de scale */
+  @keyframes animate {
+    0% {
+      left: 0;
+      transform: scale(1);
+    }
+    25% {
+      left: calc(100% - 40px);
+      transform: scale(1.2);
+    }
+    50% {
+      left: calc(100% - 40px);
+      transform: scale(1);
+    }
+    75% {
+      left: 0;
+      transform: scale(0.8);
+    }
+    100% {
+      left: 0;
+      transform: scale(1);
+    }
+  }
+
+  /* Cache le SVG utilisé pour le filtre */
+  svg {
+    width: 0;
+    height: 0;
+  }
+
+
+
+
+
+
+
 /* Conteneur principal */
 .top-nav {
     display: flex;
@@ -1051,6 +1123,15 @@ footer {
 
 
 
+
+
+
+
+
+
+
+
+
 @media screen and (max-width: 1280px) { 
     .slider-item .slide-content .slide-title {
         line-height: 4rem;
@@ -1354,6 +1435,16 @@ footer {
         margin: 1em 0;
     }
 
+    /* ** CSS LOADER ** */
+    .load {
+        width: 200px;
+    }
+
+    .load span {
+        width: 30px;
+        height: 30px;
+    }
+
 
 }
 
@@ -1486,6 +1577,16 @@ footer {
 
     .all-info-map .map .location-map .location .last-info ul {
         margin: 1em 0;
+    }
+
+    /* ** CSS LOADER ** */
+    .load {
+        width: 200px;
+    }
+
+    .load span {
+        width: 20px;
+        height: 20px;
     }
 
 
@@ -1817,6 +1918,16 @@ footer {
         margin: 1em 0;
     }
 
+    /* ** CSS LOADER ** */
+    .load {
+        width: 200px;
+    }
+
+    .load span {
+        width: 20px;
+        height: 20px;
+    }
+
 
 
 }
@@ -2099,6 +2210,16 @@ footer {
 
     .all-info-map .map .location-map .location .last-info ul {
         margin: 1em 0;
+    }
+
+    /* ** CSS LOADER ** */
+    .load {
+        width: 150px;
+    }
+
+    .load span {
+        width: 20px;
+        height: 20px;
     }
 
 
@@ -2405,6 +2526,16 @@ footer {
         height: 50vh;
     }
 
+    /* ** CSS LOADER ** */
+    .load {
+        width: 150px;
+    }
+
+    .load span {
+        width: 20px;
+        height: 20px;
+    }
+
 
 }
 
@@ -2698,6 +2829,16 @@ footer {
 
       .all-info-map .map iframe {
         height: 50vh;
+    }
+
+    /* ** CSS LOADER ** */
+    .load {
+        width: 150px;
+    }
+
+    .load span {
+        width: 20px;
+        height: 20px;
     }
 
 
@@ -3005,6 +3146,16 @@ footer {
         height: 50vh;
     }
 
+
+    /* ** CSS LOADER ** */
+    .load {
+        width: 150px;
+    }
+
+    .load span {
+        width: 20px;
+        height: 20px;
+    }
 
 
 }

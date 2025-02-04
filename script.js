@@ -95,12 +95,13 @@ const Deal = document.querySelectorAll(".deal-01");
 
 
  let menuHome = document.querySelector('.menu-home');
-  // menuHome.onclick = () => {
-  //   const navLinks = document.querySelector('.nav-links');
-  //   navLinks.classList.toggle('.active');
-  // }
-
   menuHome.addEventListener('click', () => {
     let navLinks = document.querySelector('.nav-links');
     navLinks.classList.toggle('active');
+  });
+
+
+  // <!-- Script pour masquer le loader une fois la page chargée -->
+  window.addEventListener('load', function() {
+    document.getElementById('loader').style.display = 'none';
   });

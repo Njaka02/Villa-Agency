@@ -19,6 +19,35 @@
     </head>
 
     <body>
+        <!-- Loader -->
+        <div id="loader" class="loader">
+            <div class="load">
+                <span style="--i:1;"></span>
+                <span style="--i:2;"></span>
+                <span style="--i:3;"></span>
+                <span style="--i:4;"></span>
+                <span style="--i:5;"></span>
+                <span style="--i:6;"></span>
+                <span style="--i:7;"></span>
+            </div>
+        </div>
+    
+        <!-- Filtre SVG pour l'effet "liquid" -->
+        <svg>
+            <filter id="liquid">
+                <feGaussianBlur in="SourceGraphic" stdDeviation="2" result="blur" />
+                <feColorMatrix in="blur" mode="matrix" values="
+                    1 0 0 0 0
+                    0 1 0 0 0
+                    0 0 1 0 0
+                    0 0 0 18 -7" result="liquid" />
+                <feBlend in="SourceGraphic" in2="liquid" mode="normal" />
+            </filter>
+        </svg>
+    
+        
+
+
         <header>
             <nav>
                 <div class="top-nav">
