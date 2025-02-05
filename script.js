@@ -100,8 +100,8 @@ const Deal = document.querySelectorAll(".deal-01");
     navLinks.classList.toggle('active');
   });
 
-
-  // <!-- Script pour masquer le loader une fois la page chargée -->
   window.addEventListener('load', function() {
-    document.getElementById('loader').style.display = 'none';
+    setTimeout(function() {
+      document.getElementById('loader').style.display = 'none';
+    }, 2000);
   });
